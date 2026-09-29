@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Password Detective | Crescere Digitali</title><link rel="stylesheet" href="style.css"></head>
+<body><canvas id="fx"></canvas>
+<header><img src="img/logo-crescere-digitali.png" alt="Crescere Digitali"><div><h1>Password Detective</h1><p>Quanto può scoprire qualcuno osservando quello che condividiamo online?</p></div></header>
+<main>
+<nav><button class="tab active" data-go="g1">1 · Trova la password</button><button class="tab" data-go="g2">2 · Scegli la passphrase</button></nav>
+
+<section id="g1" class="game active">
+<div class="title"><span>GIOCO 1</span><h2>Quale password potrebbe provare un attaccante?</h2><p>Usa soltanto le informazioni pubbliche dei quattro profili.</p></div>
+<div class="profiles">
+<article class="profile-card"><img class="profile-post" src="img/leo-post.png" alt="Post di LeoSpace14"><h3>Leo <small>@LeoSpace14</small></h3><select data-a="Rocket2012!"><option value="">Scegli la password...</option><option>TokyoDrago10</option><option>Rocket2012!</option><option>BasketLuna7</option><option>SkateMax2026</option></select></article>
+<article class="profile-card"><img class="profile-post" src="img/sara-post.png" alt="Post di SaraBasket"><h3>Sara <small>@SaraBasket</small></h3><select data-a="BasketLuna7"><option value="">Scegli la password...</option><option>SkateMax2026</option><option>BasketLuna7</option><option>Rocket2012!</option><option>TokyoDrago10</option></select></article>
+<article class="profile-card"><img class="profile-post" src="img/alex-post.png" alt="Post di AlexJapan"><h3>Alex <small>@AlexJapan</small></h3><select data-a="TokyoDrago10"><option value="">Scegli la password...</option><option>BasketLuna7</option><option>TokyoDrago10</option><option>SkateMax2026</option><option>Rocket2012!</option></select></article>
+<article class="profile-card"><img class="profile-post" src="img/max-post.png" alt="Post di MaxSkater"><h3>Max <small>@MaxSkater</small></h3><select data-a="SkateMax2026"><option value="">Scegli la password...</option><option>Rocket2012!</option><option>SkateMax2026</option><option>TokyoDrago10</option><option>BasketLuna7</option></select></article>
+</div>
+<div class="actions"><button id="check1" class="primary">Controlla</button><button id="reset1">Ricomincia</button></div><div id="r1" class="result"></div>
+</section>
+
+<section id="g2" class="game">
+<div class="title"><span>GIOCO 2</span><h2>Osserva i post. Quale passphrase è davvero imprevedibile?</h2><p>Ogni persona ha pubblicato <b>4 post</b>: tre contengono indizi personali, uno non dà informazioni utili per indovinare una password.</p></div>
+<div id="person"></div><div class="pager"><button id="prev">← Profilo precedente</button><b id="count"></b><button id="next">Profilo successivo →</button></div><div id="r2" class="result"></div>
+</section>
+</main>
+<footer>Tutti i profili, i post e le password sono fittizi · Crescere Digitali</footer>
+<script src="script.js"></script></body></html>
